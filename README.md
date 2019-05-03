@@ -1,5 +1,7 @@
 # Workshop
 
+First Fork your own copy of antonhimself/workshop to your account (Also keep your fork synced with original repo - how to included with the guide:). [Click here for a guide](https://help.github.com/en/articles/fork-a-repo)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Install the project dependencies
