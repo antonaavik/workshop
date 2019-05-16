@@ -11,6 +11,8 @@
       "schematics": {
         "@schematics/angular:component": {
           "inlineTemplate": true,
+          "inlineStyle": true,
+          "flat": true,
           "spec": false
         },
         "@schematics/angular:class": {
@@ -24,7 +26,7 @@
         },
         "@schematics/angular:module": {
           "spec": false,
-          "routing": true
+          "routing": false
         },
         "@schematics/angular:pipe": {
           "spec": false
