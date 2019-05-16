@@ -12,4 +12,4 @@ import { DemoComponent } from './demo.component';
   providers: [],
   bootstrap: [AppComponent] // AppComponent // DemoComponent
 })
-export class AppModule {}
+export class AppModule { }
