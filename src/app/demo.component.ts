@@ -36,7 +36,7 @@ import { Component, OnInit } from '@angular/core';
         veniam saepe atque labore enim, velit ipsa.
       </p>
     </div>
-    <div></div>
+    <app-events-view></app-events-view>
   `,
   styles: []
 })

@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-event-list',
   template: `
-    <app-event></app-event>
+    <app-event *ngFor="let event of events" [event]="event"></app-event>
   `,
   styles: []
 })

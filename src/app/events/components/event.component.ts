@@ -4,7 +4,7 @@ import { Component, OnInit, Input } from '@angular/core';
   selector: 'app-event',
   template: `
     <p>
-      event works!
+      {{ event.name }}
     </p>
   `,
   styles: []
