@@ -23,4 +23,8 @@ export class EventsService {
   add(event: IEvent) {
     this.events.push(event);
   }
+
+  getEvent(id) {
+    return this.events[id];
+  }
 }
