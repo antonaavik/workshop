@@ -13,4 +13,4 @@ import { EventsModule } from './events/events.module';
   providers: [],
   bootstrap: [AppComponent] // AppComponent // DemoComponent
 })
-export class AppModule { }
+export class AppModule {}

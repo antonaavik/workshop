@@ -3,10 +3,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-event-add',
   template: `
-    <div>
+    <form (submit)="addEvent($event)">
       <input type="text" [value]="newEvent" (keyup)="update($event)" />
-      <button *ngIf="newEvent" (click)="addEvent()">Add event</button>
-    </div>
+      <button [disabled]="!newEvent">Add event</button>
+    </form>
   `,
   styles: []
 })
@@ -22,7 +22,8 @@ export class EventAddComponent implements OnInit {
     this.newEvent = e.target.value;
   }
 
-  addEvent() {
+  addEvent(e) {
+    e.preventDefault();
     this.add.emit({ name: this.newEvent });
     this.newEvent = '';
   }

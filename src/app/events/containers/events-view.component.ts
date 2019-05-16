@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventsService } from '../events.service';
 
 @Component({
   selector: 'app-events-view',
@@ -9,22 +10,16 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class EventsViewComponent implements OnInit {
-  events: IEvent[] = [
-    { name: 'Event one' },
-    { name: 'Event two' },
-    { name: 'Event three' },
-    { name: 'Event four' },
-    { name: 'Event five' },
-    { name: 'Event six' },
-    { name: 'Event seven' },
-    { name: 'Event eight' }
-  ];
+  events: IEvent[] = [];
 
-  constructor() {}
+  constructor(private eventsService: EventsService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.events = this.eventsService.getData();
+  }
 
   add(event: IEvent) {
-    this.events.push(event);
+    this.eventsService.add(event);
+    // this.events.push(event);
   }
 }

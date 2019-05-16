@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventsService } from './events/events.service';
 
 @Component({
   selector: 'app-root',
@@ -37,6 +38,7 @@ import { Component, OnInit } from '@angular/core';
       </p>
     </div>
     <app-events-view></app-events-view>
+    {{ eventsDataLayer | json }}
   `,
   styles: []
 })
@@ -46,9 +48,13 @@ export class DemoComponent implements OnInit {
   isVisible: boolean = false;
   items: Array<{ name: string }> = [{ name: 'for item 1' }, { name: 'for item 2' }];
 
-  constructor() {}
+  eventsDataLayer: IEvent[];
 
-  ngOnInit() {}
+  constructor(private eventsService: EventsService) {}
+
+  ngOnInit() {
+    this.eventsDataLayer = this.eventsService.getData();
+  }
 
   getTitle(): string {
     return 'Method title';
