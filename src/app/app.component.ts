@@ -32,4 +32,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'workshop';
+
+  // Use it to test your estday pipe
+  today: Date = new Date();
 }
