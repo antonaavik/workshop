@@ -11,6 +11,6 @@ import {EventsModule} from './events/events.module';
   declarations: [AppComponent, HighlightDirective, ReversePipe, DemoComponent],
   imports: [BrowserModule, EventsModule],
   providers: [],
-  bootstrap: [DemoComponent] // AppComponent // DemoComponent
+  bootstrap: [AppComponent] // AppComponent // DemoComponent
 })
 export class AppModule {}
