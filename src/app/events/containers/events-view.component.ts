@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { EventsService } from '../events.service';
 
 @Component({
@@ -9,17 +9,23 @@ import { EventsService } from '../events.service';
   `,
   styles: []
 })
-export class EventsViewComponent implements OnInit {
+export class EventsViewComponent implements OnInit, OnDestroy {
   events: IEvent[] = [];
+  lifecycleTest = null;
 
   constructor(private eventsService: EventsService) {}
 
   ngOnInit() {
     this.events = this.eventsService.getData();
+    this.lifecycleTest = setInterval(() => console.log(new Date()), 1000);
   }
 
   add(event: IEvent) {
     this.eventsService.add(event);
     // this.events.push(event);
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.lifecycleTest);
   }
 }

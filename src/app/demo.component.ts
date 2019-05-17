@@ -37,6 +37,8 @@ import {EventsService} from './events/events.service';
         veniam saepe atque labore enim, velit ipsa.
       </p>
     </div>
+
+    <h2>Events</h2>
     {{ eventsDataLayer | json }}
     <router-outlet></router-outlet>
   `,
