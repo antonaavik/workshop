@@ -15,11 +15,11 @@ import { EventViewComponent } from './events/containers/event-view.component';
 
 const routes: Routes = [
   {
-    path: 'events',
+    path: '',
     component: EventsViewComponent
   },
   {
-    path: 'events/:eventId',
+    path: ':eventId',
     component: EventViewComponent
   }
 ];
