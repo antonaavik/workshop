@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { EventsService } from './events/events.service';
+import {Component, OnInit} from '@angular/core';
+import {EventsService} from './events/events.service';
 
 @Component({
   selector: 'app-root',
@@ -48,7 +48,7 @@ export class DemoComponent implements OnInit {
   title: string = 'Hello';
   someNumber: number = 4;
   isVisible: boolean = false;
-  items: Array<{ name: string }> = [{ name: 'for item 1' }, { name: 'for item 2' }];
+  items: Array<{name: string}> = [{name: 'for item 1'}, {name: 'for item 2'}];
 
   eventsDataLayer: IEvent[];
 

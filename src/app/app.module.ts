@@ -30,6 +30,6 @@ const routes: Routes = [
   declarations: [AppComponent, HighlightDirective, ReversePipe, DemoComponent],
   imports: [BrowserModule, EventsModule, RouterModule.forRoot(routes)],
   providers: [],
-  bootstrap: [DemoComponent] // AppComponent // DemoComponent
+  bootstrap: [AppComponent] // AppComponent // DemoComponent
 })
 export class AppModule {}
