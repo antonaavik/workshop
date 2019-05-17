@@ -7,3 +7,5 @@ You will make news feed. Where you copy data from `4-news.ts` and add it to your
 Try to make your own service, where you get all the news and maybe even you can add news?
 
 Looking for challenge? Try to add commenting feature!
+
+> When in trouble seek help from events feature module ir ask for help.(from google or in person)
