@@ -22,7 +22,6 @@ export class EventsViewComponent implements OnInit, OnDestroy {
 
   add(event: IEvent) {
     this.eventsService.add(event);
-    // this.events.push(event);
   }
 
   ngOnDestroy() {
