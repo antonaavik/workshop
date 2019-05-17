@@ -2,7 +2,7 @@
 
 1. Open `app.component.ts` and make sure `AppComponent` is set as bootstrap in `app.module.ts`
 2. Look up hero object and change it to match your favorite superhero information.
-   > Note: [How to set date](https://www.w3schools.com/js/js_dates.asp)
+   > Note: [How to set birthday date](https://www.w3schools.com/js/js_dates.asp)
 3. Print out your hero name and birthday to browser
 4. Make function that takes hero object as input and return string of shortcut name.
    > Shortcut name can be first letter of name in uppercase. For example `K` <br />
@@ -13,5 +13,7 @@
    > Note: If your shortcut name had birthday year in it, it changed after button click!<br />
    > Note: Refresh page to get the initial state
 8. Add input under button that changes the hero name
-9. Add button that hides your hero information
-> Tip: You need new boolean constant for that
+9. Add button that hides your hero information on click
+   > Tip: You need new boolean constant and function for that
+
+> If in trouble seek help from `demo.component.ts`
